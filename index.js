@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         console.log('The form was submitted');
-        const userName = document.getElementById('username-input').value;
-        const userDetails = fetchUserDetails(userName);
-        updateUserSummary(userDetails);
+        const username = document.getElementById('username-input').value;
+        const userSummary = fetchUserSummary(username);
+        updateUserSummary(userSummary);
     });
 
     // Update this function, add code to retrieve and process the user summary information
-    const fetchUserDetails = (username) => {
+    const fetchUserSummary = (username) => {
         const apiEndpoint = 'https://api.github.com/users/USERNAME';
         console.log('Searching for username: ', username);
         return {

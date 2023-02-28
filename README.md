@@ -12,7 +12,6 @@ You can find full details of the API endpoint [here](https://docs.github.com/en/
 
 ## Pre-requisites
 
-- Node JS
 - A clone of this repo
 - A suitable development environment, such as VSCode
 
